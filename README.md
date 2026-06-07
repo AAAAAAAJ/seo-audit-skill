@@ -58,6 +58,8 @@ audit this page: https://openclaw.ai
 
 `seo-audit/scripts/seo-optimize.py` turns audit findings into an optimization kit saved to `reports/<site>-seo-optimization.md`.
 
+Detailed skill docs: [seo-optimize README](seo-optimize/README.md) · [中文](seo-optimize/README.zh.md)
+
 Every optimizer run also writes a required HTML audit report first and serves it from the local report server:
 
 ```text
@@ -67,6 +69,8 @@ Comparison report -> http://127.0.0.1:8766/moshuopc-com-comparison.html
 
 Flow: generate the before-audit report, generate/apply optimization output, then generate a before-vs-after comparison report.
 The comparison report keeps the original audit-report styling and shows the complete original audit on the left and the SEO-optimized target audit on the right on desktop screens.
+
+![SEO optimization comparison report](assets/seo-optimize-comparison-split.png)
 
 | Output | What it contains |
 |---|---|
@@ -172,7 +176,9 @@ seo-audit-skill/
 │   └── scripts/
 │       └── check-social.py            # OG + Twitter Card validation → JSON
 └── seo-optimize/
-    └── SKILL.md                       # Direct optimization workflow
+    ├── SKILL.md                       # Direct optimization workflow
+    ├── README.md                      # Detailed English optimizer docs
+    └── README.zh.md                   # Detailed Chinese optimizer docs
 ```
 
 ---

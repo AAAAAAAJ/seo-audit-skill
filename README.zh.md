@@ -58,6 +58,8 @@ audit this page: https://openclaw.ai
 
 `seo-audit/scripts/seo-optimize.py` 会把审计结果整理成优化包，默认保存到 `reports/<site>-seo-optimization.md`。
 
+详细 Skill 文档：[seo-optimize README](seo-optimize/README.zh.md) · [English](seo-optimize/README.md)
+
 每次运行优化器都会先写入一个必出的 HTML 审计报告，并通过本地报告服务访问：
 
 ```text
@@ -67,6 +69,8 @@ Comparison report -> http://127.0.0.1:8766/moshuopc-com-comparison.html
 
 流程：先生成优化前审计报告，再生成或应用优化结果，最后生成优化前后对比报告。
 对比报告沿用原审计报告样式，桌面端左侧展示完整原始审计，右侧展示完整 SEO 优化后目标审计。
+
+![SEO 优化对比报告](assets/seo-optimize-comparison-split.png)
 
 | 输出 | 内容 |
 |---|---|
@@ -209,7 +213,9 @@ seo-audit-skill/
 │   └── scripts/
 │       └── check-social.py            # OG + Twitter Card 校验 → JSON
 └── seo-optimize/
-    └── SKILL.md                       # 直接优化工作流
+    ├── SKILL.md                       # 直接优化工作流
+    ├── README.md                      # 详细英文说明
+    └── README.zh.md                   # 详细中文说明
 ```
 
 ---
